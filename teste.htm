@@ -1,52 +1,55 @@
+<div id="wrap">
+  <div class="link box">
+    <p>0. Shape Url</p>
+    <input type="text" id="link" value="" placeholder="input your url" style="width:200px">
+  </div>
+  <div class="add_shape box">
+    <div>
+      <p>1. Color</p>
+      <a href="#" class="color btn" data-color="red" style="background-color:red; color:white;"></a>
+      <a href="#" class="color btn" data-color="green" style="background-color:green; color:white;"></a>
+      <a href="#" class="color btn" data-color="blue" style="background-color:blue; color:white;"></a>
+      <a href="#" class="color btn" data-color="purple" style="background-color:purple; color:white;"></a>
+      <a href="#" class="color btn" data-color="yellow" style="background-color:yellow; color:black;"></a>
+    </div>
+    <div class="defalut_shape shape">
+      <p>2. Basic Shape Type</p>
+      <a href="#" id="rect" class="btn">add rectangle</a>
+      <a href="#" id="circle" class="btn">add circle</a>
+      <a href="#" id="ellipse" class="btn">add ellipse</a>
+    </div>
 
-<!DOCTYPE html><html class=''>
-<head><script src='//assets.codepen.io/assets/editor/live/console_runner-d0a557e5cb67f9cd9bbb9673355c7e8e.js'></script><script src='//assets.codepen.io/assets/editor/live/events_runner-21174b4c7273cfddc124acb0876792e0.js'></script><script src='//assets.codepen.io/assets/editor/live/css_live_reload_init-7618a0de08795409d8f6c9ef6805f7b2.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="canonical" href="http://codepen.io/potatofactory/pen/RRbXRe" />
+    <div class="text_shape shape">
+      <p>3. Text Shape Type</p>
+      <input type="number" id="size" placeholder="text size" style="width:60px">
+      <input type="text" id="text_input" placeholder="input text" style="width: 150px;">
+      <a href="#" id="text" class="btn">add text</a>
+    </div>
 
+    <div class="image_shape shape">
+      <p>4. Image Shape Type</p>
+      <input type="radio" id="image_1" name="image_input" class="image_input" data-image="http://icon-icons.com/icons2/165/PNG/256/mapmarker_pushpin_right_azure_22998.png"><label for="image_1"><img src="http://icon-icons.com/icons2/165/PNG/256/mapmarker_pushpin_right_azure_22998.png"></label>
+      <input type="radio" id="image_2" name="image_input" class="image_input" data-image="http://icon-icons.com/icons2/165/PNG/256/mapmarker_marker_outside_azure_23007.png"><label for="image_2"><img src="http://icon-icons.com/icons2/165/PNG/256/mapmarker_marker_outside_azure_23007.png"></label>
+      <input type="radio" id="image_3" name="image_input" class="image_input" data-image="http://icon-icons.com/icons2/165/PNG/256/mapmarker_drawingpin_right_pink_23026.png"><label for="image_3"><img src="http://icon-icons.com/icons2/165/PNG/256/mapmarker_drawingpin_right_pink_23026.png"></label>
+      <input type="radio" id="image_4" name="image_input" class="image_input" data-image="http://icon-icons.com/icons2/156/PNG/128/bt_right_arrow_22072.png" checked><label for="image_4"><img src="http://icon-icons.com/icons2/156/PNG/128/bt_right_arrow_22072.png"></label>
+      <a href="#" id="image" class="btn">add image</a>
+    </div>
+  </div>
+  <div class="remove_shape box">
+    <a href="#" id="remove" class="btn">remove shape</a>
+    <a href="#" id="remove_all" class="btn">remove all shapes</a>
+  </div>
+  <div class="_imageMaps_area">
+    <h3>Edit Image Maps</h3>
+    <img src="http://cfile209.uf.daum.net/image/247F194A5234414929344E" class="_image_maps">
+  </div>
 
-<style class="cp-pen-styles">._imageMaps_area,
-._imageMaps_area_view {
-  margin: 0 auto;
-  padding-bottom: 50px;
-  width: 700px;
-  height: 350px;
-  position: relative;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-._imageMaps_area_view {
-  width: 500px;
-  height: 250px;
-}
-
-img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-a {
-  width: 18px;
-  height: 18px;
-  text-decoration: none;
-}
-
-.shape {
-  margin: 18px 0;
-}
-
-.btn {
-  padding: 5px 2px;
-  border: 2px solid black;
-  background-color: #ffffff;
-  color: #000000;
-}
-
-a.color {
-  display: inline-block;
-  vertical-align: middle;
+  <div class="_imageMaps_area_view">
+    <h3 class="view_header">Result</h3>
+    <a href="#" class="btn maps_view" id="view">view result</a>
+    <img src="http://cfile209.uf.daum.net/image/247F194A5234414929344E" class="_image_maps_view">
+  </div>
+</div>
 }
 
 a.color.selected {
